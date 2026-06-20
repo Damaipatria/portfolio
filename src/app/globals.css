@@ -1,26 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* font family */
+  --font-nunito: "Nunito", sans-serif;
+  --font-nunito-sans: "Nunitosans", sans-serif;
+  --font-quicksand: "Quicksand", sans-serif;
+  /* Solid Shadow */
+  --shadow-solid-xs: 3px 3px 0px 0px;
+  --shadow-solid-sm: 4px 4px 0px 0px;
+  --shadow-solid-md: 5px 5px 0px 0px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer components {
+  .hover-underline {
+    @apply relative inline-block after:content-[''] after:absolute after:left-1/2 after:bottom-0 after:h-0.5 after:w-0 after:bg-current after:rounded-full after:transition-all after:duration-200 hover:after:left-0 hover:after:w-full;
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
