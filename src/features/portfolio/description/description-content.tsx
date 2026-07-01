@@ -1,3 +1,6 @@
+import { techStacksData } from "@/lib/data/tech-stacks-data";
+import { DescriptionTechStack } from "./description-tech-stack";
+
 export function DescriptionContent() {
   return (
     <>
@@ -18,9 +21,10 @@ export function DescriptionContent() {
         </div>
       </div>
       <div>
-        <h2 className="mb-2 text-xs text-gray-400 font-bold font-nunito uppercase tracking-[0.25rem]">
+        <h2 className="mb-3 text-xs text-gray-400 font-bold font-nunito uppercase tracking-[0.25rem]">
           Tech Stack
         </h2>
+        <DescriptionTechStack />
       </div>
     </>
   )
