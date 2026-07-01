@@ -3,7 +3,8 @@
 import { Dialog, DialogClose, DialogContent, DialogDescription, DialogOverlay, DialogPortal, DialogTitle } from "@radix-ui/react-dialog";
 import { Projects } from "./types";
 import { ProjectTechTag } from "./project-tech-tag";
-import { CodeXml, FileText, UserCog2 } from "lucide-react";
+import { CodeXml, FileText, UserCog2, XIcon } from "lucide-react";
+import { ProjectSkeleton } from "./project-skeleton";
 
 export interface ProjectDetailDialogProps {
   open: boolean;
@@ -17,14 +18,25 @@ export function ProjectDetailDialog({ open, onOpenChange, project }: ProjectDeta
       <DialogPortal>
         <DialogOverlay className="fixed inset-0 z-50 bg-black/50" />
         <DialogContent className="fixed top-1/12 right-1/2 translate-x-1/2 z-50 w-3xl font-nunito bg-white border rounded-xs">
-          <div className="relative h-38 border-b">
-            <figure className="w-full h-full overflow-hidden">
-              <img src={project?.image} alt={project?.title} className="w-full h-full object-cover object-center" />
-            </figure>
+          <div className="relative h-38 border-b overflow-hidden">
+            {!project?.confidential ? (
+              <figure className="w-full h-full overflow-hidden">
+                <img src={project?.image} alt={project?.title} className="w-full h-full object-cover object-center" />
+              </figure>
+            ) : (
+              <ProjectSkeleton type="modal" />
+            )}
             <div className="absolute top-0 w-full h-full py-4 px-6 bg-black/45 text-white">
               {project?.confidential && <span className="uppercase text-xs text-gray-300 font-bold font-nunito-sans tracking-wide">NDA - Detail Disesuaikan</span>}
               <DialogTitle className="text-2xl font-extrabold">{project?.title}</DialogTitle>
               <DialogDescription className="text-sm font-quicksand font-medium">{project?.company} - {project?.role}</DialogDescription>
+            </div>
+            <div className="absolute top-0 right-0 p-1.5">
+              <DialogClose asChild>
+                <button className="p-1.5 text-sm text-white rounded-sm cursor-pointer hover:bg-white/20 active:bg-white/40">
+                  <XIcon size={18} strokeWidth={3} />
+                </button>
+              </DialogClose>
             </div>
           </div>
           <div className="py-4 px-6">
