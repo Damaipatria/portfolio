@@ -6,10 +6,10 @@ import { ProjectContent } from "@/features/portfolio/project/project-content";
 export default function Home() {
   return (
     <main>
-      <section>
+      <section id="beranda">
         <HeroContent />
       </section>
-      <section className="flex justify-center 2xl:gap-24 gap-3 py-20 font-quicksand bg-gray-50">
+      <section id="tentang" className="flex justify-center 2xl:gap-24 gap-3 py-20 font-quicksand bg-gray-50">
         <div className="basis-104">
           <DescriptionContent />
         </div>
@@ -17,7 +17,7 @@ export default function Home() {
           <ExperienceContent />
         </div>
       </section>
-      <section className="py-32">
+      <section id="portofolio" className="py-32">
         <ProjectContent />
       </section>
     </main>

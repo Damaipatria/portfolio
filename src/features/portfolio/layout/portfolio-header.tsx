@@ -34,7 +34,7 @@ export const PortofolioHeader = () => {
               <li>
                 <a
                   href="#beranda"
-                  className="hover-underline hover:text-gray-950"
+                  className="hover-underline py-0.5 px-1 hover:text-gray-950"
                 >
                   Beranda
                 </a>
@@ -42,7 +42,7 @@ export const PortofolioHeader = () => {
               <li>
                 <a
                   href="#tentang"
-                  className="hover-underline hover:text-gray-950"
+                  className="hover-underline py-0.5 px-1 hover:text-gray-950"
                 >
                   Tentang Saya
                 </a>
@@ -50,13 +50,13 @@ export const PortofolioHeader = () => {
               <li>
                 <a
                   href="#portofolio"
-                  className="hover-underline hover:text-gray-950"
+                  className="hover-underline py-0.5 px-1 hover:text-gray-950"
                 >
                   Portofolio
                 </a>
               </li>
             </ul>
-            <p className="py-1.5 px-5 font-medium border rounded-xs hover:text-white hover:bg-black">Kontak Saya</p>
+            <a href="mailto:damaipatriasuyana10@gmail.com?subject=Halo%20Damai%2C%20saya%20tertarik%20berdiskusi" className="py-1.5 px-5 font-medium border rounded-xs hover:text-white hover:bg-black">Kontak Saya</a>
           </div>
         </nav>
       </header>
