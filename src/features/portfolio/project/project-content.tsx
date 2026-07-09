@@ -21,8 +21,8 @@ export function ProjectContent() {
     <div className="font-quicksand">
       <h1 className="text-4xl font-extrabold text-center font-nunito uppercase tracking-wider">Portfolio</h1>
       <p className="mt-1.5 text-base text-center text-gray-400 font-extralight font-nunito-sans tracking-wide">Berikut beberapa proyek yang telah saya kerjakan.</p>
-      <div className="max-w-4xl mx-auto">
-        <div className="grid grid-cols-3 gap-5 mt-10">
+      <div className="lg:max-w-4xl md:max-w-xl mx-auto">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 mt-10 md:px-0 px-4">
           {projectsData?.map((project) => (
             <ProjectCard key={project.id} data={project} onOpenModal={handleOpenModal} />
           ))}
