@@ -3,19 +3,19 @@ import Image from "next/image"
 
 export function HeroContent() {
   return (
-    <div className="flex justify-center items-center xl:gap-36 lg:gap-16 h-dvh font-quicksand text-gray-950">
-      <div className="basis-md">
-        <p className="w-fit mb-7 pb-0.5 pe-1.5 text-gray-500 font-medium rounded-xs shadow-gray-400 shadow-solid-sm">
+    <div className="relative flex justify-center md:items-center items-end xl:gap-36 lg:gap-16 md:gap-5 h-dvh font-quicksand text-gray-950 overflow-hidden">
+      <div className="md:static absolute md:translate-y-0 -translate-y-1/2 sm:-bottom-32 -bottom-40 z-40 lg:basis-md md:basis-100 md:px-0 px-2.5 bg-white/70 backdrop-blur-xs">
+        <p className="w-fit mb-7 pt-7 text-gray-950 font-black italic underline">
           Selamat Datang
         </p>
         <h1 className="text-7xl font-nunito-sans font-bold uppercase">
           HI, SAYA DAMAI
         </h1>
         <br />
-        <p className="mb-10 text-justify leading-7">
+        <p className="lg:mb-10 md:mb-7 mb-10 text-justify md:font-normal font-medium leading-7">
           Front-end Web Developer berpengalaman yang berfokus pada pembuatan website responsif, interaktif, serta mudah digunakan dengan kode yang terstruktur dan berkolaborasi efektif dalam pengembangan fitur dan API.
         </p>
-        <div className="flex items-center gap-x-9 pt-5 font-semibold text-gray-600">
+        <div className="flex md:justify-start justify-between items-center md:gap-x-9 gap-x-0 lg:pt-5 font-semibold text-gray-600">
           <a href="mailto:damaipatriasuyana10@gmail.com?subject=Halo%20Damai%2C%20saya%20tertarik%20berdiskusi" className="hover-underline flex items-center gap-1 pb-1 px-2 text-sm hover:text-gray-950 hover:border-gray-950">
             <i><Mail size={16} /></i>
             <p>Email</p>
@@ -29,16 +29,16 @@ export function HeroContent() {
           </a>
         </div>
       </div>
-      <div className="basis-xs">
-        <div className="relative">
-          <figure className="relative h-96 border rounded-xs shadow-solid-sm overflow-hidden">
+      <div className="md:static absolute md:translate-y-0 -top-1 md:basis-xs md:w-auto w-full">
+        <div className="md:w-80 w-full">
+          <figure className="relative md:h-96 h-136 md:border md:rounded-xs md:shadow-solid-sm overflow-hidden">
             <Image
               src="https://amowvrssevrsklcnlvrm.supabase.co/storage/v1/object/public/portfolio%20tumbnail/photo_hero_section.webp"
               alt="HTML Code"
-              width={400}
-              height={400}
+              fill={true}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               loading="eager"
-              className="p-px rounded-xs brightness-200"
+              className="p-px md:rounded-xs rounded-sm brightness-200"
             />
           </figure>
         </div>

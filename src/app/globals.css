@@ -13,6 +13,21 @@
   --shadow-solid-xs: 3px 3px 0px 0px;
   --shadow-solid-sm: 4px 4px 0px 0px;
   --shadow-solid-md: 5px 5px 0px 0px;
+  /* Modal Animation */
+  --animate-modal: modal-in 200ms ease-out forwards;
+
+  @keyframes modal-in {
+    0% {
+      opacity: 0;
+      transform: translateY(1rem) scale(0.9);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
 }
 
 @layer components {
