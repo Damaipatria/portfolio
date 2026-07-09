@@ -9,11 +9,11 @@ export default function Home() {
       <section id="beranda">
         <HeroContent />
       </section>
-      <section id="tentang" className="flex justify-center 2xl:gap-24 gap-3 py-20 font-quicksand bg-gray-50">
-        <div className="basis-104">
+      <section id="tentang" className="flex md:flex-row flex-col justify-center 2xl:gap-24 gap-20 py-20 lg:px-0 md:px-5 px-2 font-quicksand bg-gray-50">
+        <div className="lg:basis-104 md:basis-72">
           <DescriptionContent />
         </div>
-        <div className="basis-lg">
+        <div className="lg:basis-lg md:basis-96">
           <ExperienceContent />
         </div>
       </section>

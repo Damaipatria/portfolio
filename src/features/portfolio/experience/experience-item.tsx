@@ -16,7 +16,7 @@ export function ExperienceItem({ data }: ExperienceItemProps) {
 
   return (
     <>
-      <div className="relative py-6 pl-14">
+      <div className="relative py-6 md:pl-14 pl-9">
         {/* Node */}
         <div className="absolute top-8 left-2 -translate-x-1/2 -translate-y-1/2 size-2 bg-gray-50 border border-black rounded-full"></div>
 

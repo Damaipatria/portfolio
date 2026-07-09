@@ -4,10 +4,10 @@ import { DescriptionTechStack } from "./description-tech-stack";
 export function DescriptionContent() {
   return (
     <>
-      <div className="mb-8 pb-14 pe-5 relative font-quicksand border-b border-gray-300">
+      <div className="mb-8 md:pb-14 pb-8 md:pe-5 pe-0 relative font-quicksand border-b border-gray-300">
         <div className="absolute top-0 -left-5.5 translate-x-1/2 h-12 w-px bg-black"></div>
         <div className="absolute top-12 -left-5.5 translate-x-1/2 h-17 w-px bg-gray-300"></div>
-        <div className="">
+        <div>
           <h1 className="mb-2 text-xs text-gray-400 font-bold font-nunito uppercase tracking-[0.25rem]">
             Siapa saya
           </h1>
