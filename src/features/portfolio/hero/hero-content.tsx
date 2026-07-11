@@ -4,7 +4,7 @@ import Image from "next/image"
 export function HeroContent() {
   return (
     <div className="relative flex justify-center md:items-center items-end xl:gap-36 lg:gap-16 md:gap-5 h-dvh font-quicksand text-gray-950 overflow-hidden">
-      <div className="md:static absolute md:translate-y-0 -translate-y-1/2 sm:-bottom-32 -bottom-40 z-40 lg:basis-md md:basis-100 md:px-0 px-2.5 bg-white/70 backdrop-blur-xs">
+      <div className="z-10 lg:basis-md md:basis-100 md:px-0 sm:pb-30 pb-14 px-2.5 bg-white/70 backdrop-blur-xs">
         <p className="w-fit mb-7 pt-7 text-gray-950 font-black italic underline">
           Selamat Datang
         </p>
@@ -29,7 +29,7 @@ export function HeroContent() {
           </a>
         </div>
       </div>
-      <div className="md:static absolute md:translate-y-0 -top-1 md:basis-xs md:w-auto w-full">
+      <div className="md:static absolute md:translate-y-0 top-15 md:basis-xs md:w-auto w-full">
         <div className="md:w-80 w-full">
           <figure className="relative md:h-96 h-136 md:border md:rounded-xs md:shadow-solid-sm overflow-hidden">
             <Image

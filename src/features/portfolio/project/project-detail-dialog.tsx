@@ -46,7 +46,7 @@ export function ProjectDetailDialog({ open, onOpenChange, project }: ProjectDeta
               </DialogClose>
             </div>
           </div>
-          <div className="grow min-h-0 lg:py-4 md:py-2.5 py-2 lg:px-6 md:px-3 px-3 overflow-auto">
+          <div className="grow min-h-0 lg:py-4 md:py-4 py-3.5 lg:px-6 md:px-5 px-4 overflow-auto">
             <div className="flex md:flex-row flex-col lg:gap-4 md:gap-2 gap-4">
               <div className="basis-1/2">
                 <div className="mb-4">
@@ -85,9 +85,9 @@ export function ProjectDetailDialog({ open, onOpenChange, project }: ProjectDeta
           </div>
           <div className="shrink-0 pb-4 md:px-6 px-2">
             <div className="flex justify-between items-center gap-2 pt-2 px-1 border-t border-gray-400">
-              <div className="flex items-center gap-1">
-                <div className={`${project?.status === "Production" ? "bg-green-500" : project?.status === "Development" ? "bg-yellow-500" : ""} size-1.5 rounded-full`} />
-                <p className="text-xs text-gray-700 font-semibold">{project?.status}</p>
+              <div className="flex items-center gap-2">
+                <div className={`${project?.status === "Production" ? "bg-green-500 outline-green-500" : project?.status === "Development" ? "bg-yellow-500 outline-yellow-500" : ""} size-1.75 outline rounded-full`} />
+                <p className="pt-px text-xs text-gray-700 font-bold">{project?.status}</p>
               </div>
               <DialogClose asChild>
                 <button className="py-1.5 px-3 text-sm text-gray-600 border rounded-sm cursor-pointer hover:bg-gray-800 hover:text-white active:bg-gray-950">Tutup</button>
