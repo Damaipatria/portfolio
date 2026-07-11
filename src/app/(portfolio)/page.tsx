@@ -9,7 +9,7 @@ export default function Home() {
       <section id="beranda">
         <HeroContent />
       </section>
-      <section id="tentang" className="flex md:flex-row flex-col justify-center 2xl:gap-24 gap-20 py-20 lg:px-0 md:px-5 px-2 font-quicksand bg-gray-50">
+      <section id="tentang" className="flex md:flex-row flex-col justify-center 2xl:gap-24 lg:gap-5 md:gap-3 gap-20 py-20 lg:px-0 md:px-5 px-2 font-quicksand bg-gray-50">
         <div className="lg:basis-104 md:basis-72">
           <DescriptionContent />
         </div>
@@ -17,7 +17,7 @@ export default function Home() {
           <ExperienceContent />
         </div>
       </section>
-      <section id="portofolio" className="py-32">
+      <section id="portofolio" className="lg:py-32 py-7">
         <ProjectContent />
       </section>
     </main>
