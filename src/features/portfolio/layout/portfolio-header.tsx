@@ -29,10 +29,10 @@ export const PortofolioHeader = () => {
       <header className="relative z-50 font-nunito">
         <nav
           aria-label="Header navigation"
-          className={`${navbarShow ? "translate-y-0 lg:top-5 md:top-3 top-1.5" : "-translate-y-full -top-3"} fixed right-1/2 translate-1/2 xl:w-5xl lg:w-4xl md:w-185 w-[calc(100%-1rem)] h-14 transition-all duration-500 ease-in-out`}
+          className={`${navbarShow ? "translate-y-0 lg:top-5 md:top-3 top-0.5" : "-translate-y-full -top-3"} fixed right-1/2 translate-1/2 xl:w-5xl lg:w-4xl md:w-185 w-[calc(100%-0.25rem)] h-14 transition-all duration-500 ease-in-out`}
         >
-          <div className={`${menuOpen ? "md:max-h-max max-h-80.5" : "md:max-h-max max-h-12.5"} flex md:flex-row flex-col md:justify-between md:items-center lg:py-3.5 md:py-2.5 py-2 lg:px-6 md:px-3 px-3 md:bg-white/70 bg-white/85 backdrop-blur border rounded-xs shadow-none transition-all overflow-hidden duration-300 ease-in-out md:hover:shadow-solid-sm`}>
-            <div className="md:block flex justify-between items-center gap-x-2 md:pb-0 pb-2 md:px-0 px-3 md:border-0 border-b">
+          <div className={`${menuOpen ? "md:max-h-max max-h-80.5" : "md:max-h-max max-h-14"} flex md:flex-row flex-col md:justify-between md:items-center lg:py-3.5 md:py-2.5 py-2.5 lg:px-6 md:px-3 px-3 md:bg-white/70 bg-white/85 backdrop-blur border rounded-xs shadow-none transition-all overflow-hidden duration-300 ease-in-out md:hover:shadow-solid-sm`}>
+            <div className="md:block flex justify-between items-center gap-x-2 md:pb-0 pb-3 md:px-0 px-0.5 md:border-0 border-b">
               <h1 className="text-gray-950 text-2xl font-bold">DamaiPs</h1>
               <button className="md:hidden block py-1.5 px-2 border rounded-sm hover:text-white hover:bg-black" onClick={() => setMenuOpen(!menuOpen)}>
                 <Menu size={18} strokeWidth={2} />
