@@ -5,7 +5,7 @@ import { ProjectContent } from "@/features/portfolio/project/project-content";
 
 export default function Home() {
   return (
-    <main>
+    <>
       <section id="beranda">
         <HeroContent />
       </section>
@@ -20,6 +20,6 @@ export default function Home() {
       <section id="portofolio" className="lg:py-32 py-7">
         <ProjectContent />
       </section>
-    </main>
+    </>
   );
 }
