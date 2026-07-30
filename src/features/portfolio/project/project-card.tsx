@@ -32,7 +32,9 @@ export function ProjectCard({ data, onOpenModal }: ProjectCardProps) {
             </div>
           </>
         ) : (
-          <ProjectSkeleton type="card" />
+          <div data-testid="project-card-skeleton">
+            <ProjectSkeleton type="card" />
+          </div>
         )}
         <div className="absolute bottom-0 w-full py-1 px-2 bg-black/50 backdrop-blur-sm">
           <div className="flex items-center gap-2">
