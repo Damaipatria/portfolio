@@ -1,6 +1,6 @@
-import { Projects } from "@/features/portfolio/project/types";
+import { Project } from "@/features/portfolio/project/types";
 
-export const projectsData: Projects[] = [
+export const projectsData: Project[] = [
   {
     id: 1,
     title: "Website Logistik dan Pengadaan Rumah Sakit",

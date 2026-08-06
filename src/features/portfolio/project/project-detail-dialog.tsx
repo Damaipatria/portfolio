@@ -1,7 +1,7 @@
 "use client";
 
 import { Dialog, DialogClose, DialogContent, DialogDescription, DialogOverlay, DialogPortal, DialogTitle } from "@radix-ui/react-dialog";
-import { Projects } from "./types";
+import { Project } from "./types";
 import { ProjectTechTag } from "./project-tech-tag";
 import { CodeXml, FileText, UserCog2, XIcon } from "lucide-react";
 import { ProjectSkeleton } from "./project-skeleton";
@@ -9,7 +9,7 @@ import { ProjectSkeleton } from "./project-skeleton";
 export interface ProjectDetailDialogProps {
   open: boolean;
   onOpenChange: (open: boolean) => void;
-  project?: Projects;
+  project?: Project;
 }
 
 export function ProjectDetailDialog({ open, onOpenChange, project }: ProjectDetailDialogProps) {

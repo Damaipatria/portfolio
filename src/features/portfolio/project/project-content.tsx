@@ -4,16 +4,16 @@ import { useState } from "react";
 import { ProjectCard } from "./project-card";
 import { ProjectDetailDialog } from "./project-detail-dialog";
 import { projectsData } from "@/lib/data/projects-data";
-import { Projects } from "./types";
+import { Project } from "./types";
 
 export function ProjectContent() {
 
   const [modalConfig, setModalConfig] = useState<{
     open: boolean;
-    project?: Projects;
+    project?: Project;
   }>({ open: false });
 
-  const handleOpenModal = (project: Projects) => {
+  const handleOpenModal = (project: Project) => {
     setModalConfig({ open: true, project });
   }
 
