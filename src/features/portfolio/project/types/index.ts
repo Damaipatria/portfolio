@@ -1,4 +1,4 @@
-export interface Projects {
+export interface Project {
   id: number;
   title: string; //Max 70 characters
   company?: string;

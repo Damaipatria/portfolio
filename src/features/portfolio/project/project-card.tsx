@@ -1,13 +1,13 @@
 "use client";
 
-import { Projects } from "./types";
+import { Project } from "./types";
 import { ProjectTechTag } from "./project-tech-tag";
 import { ExternalLink, Eye } from "lucide-react";
 import { ProjectSkeleton } from "./project-skeleton";
 
 export interface ProjectCardProps {
-  data: Projects;
-  onOpenModal: (project: Projects) => void;
+  data: Project;
+  onOpenModal: (project: Project) => void;
 }
 
 export function ProjectCard({ data, onOpenModal }: ProjectCardProps) {
@@ -32,7 +32,7 @@ export function ProjectCard({ data, onOpenModal }: ProjectCardProps) {
             </div>
           </>
         ) : (
-          <div data-testid="project-card-skeleton">
+          <div data-testid="project-card-skeleton-type-card">
             <ProjectSkeleton type="card" />
           </div>
         )}
