@@ -2,7 +2,6 @@
 import { describe, expect, test, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import { ProjectCard } from './project-card';
-import { Project } from './types';
 import userEvent from '@testing-library/user-event';
 import { createProject } from '@/lib/test/factories/project.factory';
 

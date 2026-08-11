@@ -16,7 +16,7 @@ export const createProject = (overrides: Partial<Project> = {}): Project => {
     image: "/image",
     status: "Production",
     featured: true,
-    confidential: true,
+    confidential: false,
     demoUrl: "https://example.com",
     contribution: [
       "contribution 1",
