@@ -27,7 +27,7 @@ describe("ProjectCard", () => {
   });
 
   test("should render not confidential project content", () => {
-    let projectNonConfidential = createProject({ confidential: false });
+    const projectNonConfidential = createProject({ confidential: false });
 
     render(
       <ProjectCard
@@ -42,7 +42,7 @@ describe("ProjectCard", () => {
   });
 
   test("should render confidential project content", () => {
-    let projectConfidential = createProject({ confidential: true });
+    const projectConfidential = createProject({ confidential: true });
 
     render(
       <ProjectCard
