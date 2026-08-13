@@ -4,7 +4,7 @@ import { ExperienceItem } from "./experience-item";
 export function ExperienceContent() {
   return (
     <div>
-      <h2 className="text-xs text-gray-400 font-bold font-nunito uppercase tracking-[0.25rem]">
+      <h2 className="ps-2.25 text-xs text-gray-400 font-bold font-nunito uppercase tracking-[0.25rem]">
         Pengalaman kerja
       </h2>
       <div className="relative">

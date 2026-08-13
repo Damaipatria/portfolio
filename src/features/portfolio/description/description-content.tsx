@@ -1,4 +1,3 @@
-import { techStacksData } from "@/lib/data/tech-stacks-data";
 import { DescriptionTechStack } from "./description-tech-stack";
 
 export function DescriptionContent() {

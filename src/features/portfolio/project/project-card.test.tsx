@@ -2,7 +2,6 @@
 import { describe, expect, test, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import { ProjectCard } from './project-card';
-import { Project } from './types';
 import userEvent from '@testing-library/user-event';
 import { createProject } from '@/lib/test/factories/project.factory';
 
@@ -28,7 +27,7 @@ describe("ProjectCard", () => {
   });
 
   test("should render not confidential project content", () => {
-    let projectNonConfidential = createProject({ confidential: false });
+    const projectNonConfidential = createProject({ confidential: false });
 
     render(
       <ProjectCard
@@ -43,7 +42,7 @@ describe("ProjectCard", () => {
   });
 
   test("should render confidential project content", () => {
-    let projectConfidential = createProject({ confidential: true });
+    const projectConfidential = createProject({ confidential: true });
 
     render(
       <ProjectCard
