@@ -3,11 +3,11 @@ name: CI
 on:
   pull_request:
     branches:
-      - dev
+      - feat/cd-workflows
 
   push:
     branches:
-      - dev
+      - feat/cd-workflows
 
 env:
   NODE_VERSION: 24

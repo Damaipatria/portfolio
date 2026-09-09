@@ -1,0 +1,51 @@
+# Dependencies
+node_modules
+
+# Next.js build output
+.next
+out
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Git
+.git
+.gitignore
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Editor
+.vscode
+.idea
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test & coverage
+coverage
+__tests__
+test
+*.test.*
+*.spec.*
+
+# Development config
+.eslintrc*
+.prettierrc*
+.editorconfig
+
+# Docker
+docker-compose*.yml
+.dockerignore
+
+# Documentation
+README.md
+*.md
+
+#additional
+notes.txt
