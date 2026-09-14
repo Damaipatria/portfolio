@@ -8,7 +8,8 @@ const nextConfig: NextConfig = {
         hostname: "amowvrssevrsklcnlvrm.supabase.co",
       }
     ]
-  }
+  },
+  output: "standalone",
 };
 
 export default nextConfig;
