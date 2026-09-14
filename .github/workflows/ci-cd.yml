@@ -1,13 +1,13 @@
-name: CI
+name: CI/CD
 
 on:
   pull_request:
     branches:
-      - feat/cd-workflows
+      - dev
 
   push:
     branches:
-      - feat/cd-workflows
+      - dev
 
 env:
   NODE_VERSION: 24
